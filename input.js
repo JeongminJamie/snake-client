@@ -17,14 +17,20 @@ const setupInput = (conn) => {
 const handleUserInput = function (data) {
   if (data === "w") {
     connection.write("Move: up");
-  } else if (data === "a") {
+  } 
+  if (data === "a") {
     connection.write("Move: left");
-  } else if (data === "s") {
+  } 
+  if (data === "s") {
     connection.write("Move: down");
-  } else if (data === "d") {
+  } 
+  if (data === "d") {
     connection.write("Move: right");
   }
 
+  if (data === 'j') {
+    connection.write("Say: run!");
+  }
   if (data === '\u0003') {
     console.log('bye');
     process.exit();
