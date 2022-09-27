@@ -21,6 +21,10 @@ const connect = function () {
     conn.write("Move: up");
     conn.write("Move: down");
     conn.write("Move: left");
+    // setTimeout(() => { conn.write("Move: up") }, 50);
+    // setTimeout(() => { conn.write("Move: down") }, 100);
+    // setTimeout(() => { conn.write("Move: left") }, 150);
+    // setTimeout(() => { conn.write("Move: right") }, 200);
     // setInterval(() => { conn.write("Move: up") }, 50);
     // setInterval(() => { conn.write("Move: down") }, 100);
     // setInterval(() => { conn.write("Move: left") }, 150);
